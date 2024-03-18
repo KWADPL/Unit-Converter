@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
     <body>
         <h1>Unit Converter</h1>
-        <p id="resultElement"></p>
+        <input type="number" placeholder="Enter number..." id="user">
+        <select id="unit">
+            <option value="milesToKm">Miles to Kilometers</option>
+            <option value="kmToMiles">Kilometers to Miles</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+        <p> <span id="resultElement"> Result: 0</span></p>
         <script src="script.js"></script>
     </body>
 </html>
